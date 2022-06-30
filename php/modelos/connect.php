@@ -1,17 +1,17 @@
 <?php
     class conexion{
 
-        private $HOST = "localhost";
+        /*private $HOST = "localhost";
         private $USER= "root";
         private $PASSWORD= "";
         private $BD = "u410708458_apppig";
-        private $CHARSET = "utf8";
+        private $CHARSET = "utf8";*/
         
-        // private $HOST = "193.160.64.3";
-        // private $USER= "u410708458_apppig";
-        // private $PASSWORD= "Apppig1+";
-        // private $BD = "u410708458_apppig";
-        // private $CHARSET = "utf8";
+        private $HOST = "193.160.64.3";
+        private $USER= "u410708458_apppig";
+        private $PASSWORD= "Apppig1+";
+        private $BD = "u410708458_apppig";
+        private $CHARSET = "utf8";
 
         private function connect($is_pure){
             if($is_pure){
