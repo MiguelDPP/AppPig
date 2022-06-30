@@ -1,0 +1,6 @@
+Options +FollowSymLinks
+RewriteEngine On
+ RewriteRule ^$ dashboard.php?/ [QSA,L]
+ RewriteCond %{REQUEST_FILENAME} !-f
+ RewriteCond %{REQUEST_FILENAME} !-d
+ RewriteRule (.*) dashboard.php?url=$1 [QSA,L]
