@@ -1,6 +1,6 @@
 <?php
-// const URL =  "http://apppig.site/";
-const URL =  "http://localhost/AppPig/";
+ const URL =  "http://apppig.site/";
+//const URL =  "http://localhost/AppPig/";
 function IncludeURL($name){
     echo URL.$name;
 }
