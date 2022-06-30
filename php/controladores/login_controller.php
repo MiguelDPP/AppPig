@@ -14,7 +14,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     
     
     $model = new Models($con);
-    $model->put("relacion_persona_rol");
+    $model->put("Relacion_Persona_Rol");
     $sql = mysqli_fetch_array($model->SQLqueryMost(['NoDocumento','Contrasena'],[$user,$password]));
     if(count($sql) != 0){
         $model->put("roles");
