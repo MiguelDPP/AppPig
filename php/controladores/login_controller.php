@@ -17,7 +17,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     $model->put("Relacion_Persona_Rol");
     $sql = mysqli_fetch_array($model->SQLqueryMost(['NoDocumento','Contrasena'],[$user,$password]));
     if(count($sql) != 0){
-        $model->put("roles");
+        $model->put("Roles");
         $sql2 = mysqli_fetch_array($model->SQLqueryDuos('Id', $sql['Id'])); 
         $_SESSION['user'] = $user;
         $_SESSION['rol'] = serialize($sql2);
