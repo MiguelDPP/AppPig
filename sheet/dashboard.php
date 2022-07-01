@@ -33,6 +33,18 @@ $URL = 'http://apppig.site/';
                 case "food":
                     $titulo = "Alimentos comprados";
                     break;
+                case "animalRegistry":
+                    $titulo = "Registro de animales";
+                    break;
+                case "listUsers":
+                    $titulo = "Lista de usuarios";
+                    break;
+                case "lot":
+                    $titulo = "Lista de lotes";
+                    break;
+                case "lotAnimals":
+                    $titulo = "Lista de animales";
+                    break;
                 default:
                     $titulo = "AppPig";
                     break;

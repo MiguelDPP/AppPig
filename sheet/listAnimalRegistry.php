@@ -204,7 +204,6 @@ if(mysqli_num_rows($sql) > 0){
             <div class="table-responsive ">
                 <table class="table items-table">
                     <tbody>
-
                         <tr>
                             <th class="my-0 text-black font-w500 fs-20">Items</th>
                             <th style="width:10%;" class="my-0 text-black font-w500 fs-20">Color</th>
