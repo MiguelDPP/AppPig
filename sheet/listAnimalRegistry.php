@@ -214,6 +214,8 @@ if(mysqli_num_rows($sql) > 0){
                             <th></th>
                         </tr>
                         <?php 
+                        $model->put('Detalle_Registro_Animal');
+                        $sql1 = $model->SQLqueryDuos('IdRegistroAnimal',$no);
                         $i = 0;
                          while($item = mysqli_fetch_array($sql1)){ 
                             $model->put('OtrosAtributos');
