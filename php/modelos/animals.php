@@ -44,9 +44,9 @@ class animal{
     }
     function getData(){
         if($this->Foto == ""){
-            $this->Foto = "../images/pig.png";
+            $this->Foto = "../../images/pig.png";
         }else{
-            $this->Foto = "../images/detalleRegistroAnimal/".$this->Foto;
+            $this->Foto = "../../images/detalleRegistroAnimal/".$this->Foto;
         }
         $data = "
             <tr>
