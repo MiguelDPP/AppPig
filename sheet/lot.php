@@ -4,12 +4,12 @@ $admin = false;
         $admin = true;
     }
 
-       models("lots");
-       $obj = new conexion();
-       $con = $obj->predetermined();
-       $model = new Models($con);
-       $model->put("Lotes");
-       $datos = $model->SQLquery();
+    models("lots");
+    $obj = new conexion();
+    $con = $obj->predetermined();
+    $model = new Models($con);
+    $model->put("Lotes");
+    $datos = $model->SQLquery();
 ?>
 <?php
 if($admin == true){ ?>

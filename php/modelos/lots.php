@@ -19,6 +19,7 @@ class lot{
         $button = "";
         if($admin){
             $button = "<div class='d-flex justify-content-center'>
+            <a class='btn btn-info shadow btn-xs sharp mr-1' href='./lotAnimals/{$this->Id}'><i class='mdi mdi-eye'></i></a>
             <button class='edit btn btn-primary shadow btn-xs sharp mr-1' value='{$this->Id}'><i class='fa fa-pencil'></i></button>
             <button class='delete btn btn-danger shadow btn-xs sharp mr-1' value='{$this->Id}'><i class='mdi mdi-delete'></i></button>
             </div>";    

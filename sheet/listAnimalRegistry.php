@@ -289,7 +289,7 @@ if(mysqli_num_rows($sql) > 0){
 
 <?php 
         }else{
-            echo "<a href='".URL."sheet/listUsers' class='d-none' id='redirectListUser'></a>";
+            echo "<a href='".URL."sheet/animalRegistry' class='d-none' id='redirectListUser'></a>";
         }    
     }else{
         echo "<a href='".URL."' class='d-none' id='redirectSheet'></a>";
