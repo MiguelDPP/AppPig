@@ -14,8 +14,8 @@ if(!isset($_SESSION['user'])){
     header('location: ../');
 }
 $data = unserialize($_SESSION['people']);
-$URL = 'http://apppig.site/';
-// $URL =  "http://localhost/AppPig/";
+// $URL = 'http://apppig.site/';
+$URL =  "http://localhost/AppPig/";
 
 ?>
 <!DOCTYPE html>
