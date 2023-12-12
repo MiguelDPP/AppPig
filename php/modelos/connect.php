@@ -1,4 +1,8 @@
 <?php
+    require __DIR__ . '/vendor/autoload.php';
+    $envPath = './';
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
     class conexion{
 
         private $HOST = $_ENV['HOST'];
