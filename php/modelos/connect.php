@@ -1,10 +1,10 @@
 <?php
     class conexion{
 
-        private $HOST = "localhost";
-        private $USER= "root";
-        private $PASSWORD= "";
-        private $BD = "u410708458_apppig";
+        private $HOST = $_ENV['HOST'];
+        private $USER= $_ENV['USER'];
+        private $PASSWORD= $_ENV['PASSWORD'];
+        private $BD = $_ENV['BD'];
         private $CHARSET = "utf8";
 
 
