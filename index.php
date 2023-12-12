@@ -1,6 +1,10 @@
 <?php 
     session_start();
     require_once("funciones.php");
+
+    require __DIR__ . '/vendor/autoload.php';
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
     models("connect");
     models("alerts");
     if(isset($_SESSION['user'])){
@@ -9,6 +13,8 @@
     $obj = new conexion();
     $alerts = new alerts();
     $con = $obj->predetermined();
+
+    
 ?> 
 <!DOCTYPE html>
 <html lang="en">
