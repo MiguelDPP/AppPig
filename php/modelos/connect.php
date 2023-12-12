@@ -2,18 +2,25 @@
     require __DIR__ . '/vendor/autoload.php';
    
     class conexion{
-         $envPath = './';
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-    $dotenv->load();
-        private $HOST = $_ENV['HOST'];
-        private $USER= $_ENV['USER'];
-        private $PASSWORD= $_ENV['PASSWORD'];
-        private $BD = $_ENV['BD'];
+         
+        private $HOST = "";
+        private $USER= "";
+        private $PASSWORD= "";
+        private $BD = "";
         private $CHARSET = "utf8";
-        private $PORT = $_ENV['PORT'];
+        private $PORT = "";
 
 
         private function connect($is_pure){
+            $envPath = './';
+            $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+            $dotenv->load();
+
+            $this->HOST = $_ENV['HOST'];
+            $this->USER= $_ENV['USER'];
+            $this->PASSWORD= $_ENV['PASSWORD'];
+            $this->BD = $_ENV['BD'];
+            $this->PORT = $_ENV['PORT'];
             if($is_pure){
                 $con = mysqli_connect($this->HOST,$this->USER,$this->PASSWORD);
             }else{
