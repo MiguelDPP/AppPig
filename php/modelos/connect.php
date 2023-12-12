@@ -1,10 +1,10 @@
 <?php
     require __DIR__ . '/vendor/autoload.php';
-    $envPath = './';
+   
+    class conexion{
+         $envPath = './';
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
-    class conexion{
-
         private $HOST = $_ENV['HOST'];
         private $USER= $_ENV['USER'];
         private $PASSWORD= $_ENV['PASSWORD'];
