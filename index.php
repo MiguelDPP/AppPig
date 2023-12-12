@@ -3,6 +3,7 @@
     require_once("funciones.php");
 
     require __DIR__ . '/vendor/autoload.php';
+    $envPath = './';
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
     models("connect");
