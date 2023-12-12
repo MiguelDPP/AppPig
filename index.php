@@ -6,7 +6,6 @@
     $envPath = './';
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
-    echo $_ENV['HOST'];
     models("connect");
     models("alerts");
     if(isset($_SESSION['user'])){
