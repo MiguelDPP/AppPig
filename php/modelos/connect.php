@@ -6,13 +6,14 @@
         private $PASSWORD= $_ENV['PASSWORD'];
         private $BD = $_ENV['BD'];
         private $CHARSET = "utf8";
+        private $PORT = $_ENV['PORT'];
 
 
         private function connect($is_pure){
             if($is_pure){
                 $con = mysqli_connect($this->HOST,$this->USER,$this->PASSWORD);
             }else{
-                $con = mysqli_connect($this->HOST,$this->USER,$this->PASSWORD,$this->BD);
+                $con = mysqli_connect($this->HOST,$this->USER,$this->PASSWORD,$this->BD, $this->PORT);
             }
             if($con){
                 mysqli_set_charset($con, $this->CHARSET);
