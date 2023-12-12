@@ -11,9 +11,7 @@
 
 
         private function connect($is_pure){
-            $envPath = './';
-            $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-            $dotenv->load();
+            
 
             $this->HOST = $_ENV['HOST'];
             $this->USER= $_ENV['USER'];
