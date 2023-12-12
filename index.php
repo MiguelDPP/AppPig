@@ -2,7 +2,7 @@
     session_start();
     require_once("funciones.php");
 
-    require __DIR__ . '/vendor/autoload.php';
+    require '/vendor/autoload.php';
     $envPath = './';
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
